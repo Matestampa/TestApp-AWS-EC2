@@ -8,6 +8,7 @@ App.use(express.json());
 
 
 App.get("/",(req,res)=>{
+    console.log("request recibida");
     let publicIp=req.ip;
     let publicIpFor=req.header["x-forwarde-for"];
 
