@@ -24,6 +24,6 @@ const PORT=APP_CONN_VARS.port;
 console.log(PORT);
 
 //compu ip 192.169.0.97
-App.listen(PORT,"192.168.0.97",()=>{
+App.listen(PORT,()=>{
     console.log(`Server running on port:${PORT}`)
 });
