@@ -1,0 +1,11 @@
+const dotenv=require("dotenv");
+const {join}=require("path");
+
+let env_absPath=join(__dirname,"../.env")
+dotenv.config({path:env_absPath});
+
+const APP_CONN_VARS={
+   port:process.env.PORT
+}
+
+module.exports={APP_CONN_VARS};
