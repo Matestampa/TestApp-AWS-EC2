@@ -16,7 +16,7 @@ App.get("/",(req,res)=>{
     let publicIpFor=req.header["x-forwarde-for"];
 
 
-    res.send(`Your ip is ${publicIp} y te la comes con la nueva branch`);
+    res.send(`Your ip is ${publicIp} y te la comes toda`);
 })
 
 
