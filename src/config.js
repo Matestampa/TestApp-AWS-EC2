@@ -11,4 +11,11 @@ const APP_CONN_VARS={
 }
 
 
-module.exports={APP_CONN_VARS};
+const REDIS_CONN_VARS={
+   host:process.env.REDIS_HOST,
+   port:process.env.REDIS_PORT,
+   password:process.env.REDIS_PASSWORD,
+};
+
+
+module.exports={APP_CONN_VARS,REDIS_CONN_VARS};

@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"export APP_ENV=prod&& node ./src/index.js",
-    "dev":"set APP_ENV=dev&& node ./src/index.js"
+    "start": "export APP_ENV=prod&& node ./src/index.js",
+    "dev": "set APP_ENV=dev&& node ./src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "connect-redis": "^7.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
     "ip": "^2.0.1",
+    "redis": "^4.6.13",
     "request-ip": "^3.3.0"
   }
 }
